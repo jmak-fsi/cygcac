@@ -34,6 +34,7 @@ clean:
 	mkdir $@
 
 	cp DoD_Root_CA_2__0x05__DoD_Root_CA_2.cer /etc/pki/ca-trust/source/anchors/
+	cp DoD_Root_CA_3__01__DoD_Root_CA_3.cer /etc/pki/ca-trust/source/anchors/
 	update-ca-trust
 
 $(PREFIX)/ssl/openssl.cnf: openssl.cnf | $(PREFIX)/ssl
